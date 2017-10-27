@@ -29,23 +29,21 @@
         Power Saving Mode
       </div>
       <div class="control_buttons">
-          <button type="submit" value="Up">On</button>
-          <button type="submit" value="Down">Off</button>
+          <button id="psm_on" type="submit" value="Up">On</button>
+          <button id="psm_off" type="submit" value="Down">Off</button>
       </div>
-      <div class="funbutton">
-      <button type="button" id="firebutton">Feelin' Hot?</button>
-      </div>
-      <div class="label">
-        Current Usage
+      <div class="energy_usage1">
+        <button id="energy_usage1" type="submit" value="energyusage">Current Energy Usage</button>
       </div>
       <div class="energy_usage">
-        Low
-        Medium
-        High
+        <span id="current_energy_usage"></span>
       </div>
       <div id="weirdgif"><img src="http://www.reactiongifs.com/r/brule-omg.gif"></div>
     <script src="src/jquery-3.2.1.js"></script>
     <script src="src/Thermostat.js"></script>
     <script src="src/interface.js"></script>
+    <div class="funbutton">
+    <button type="button" id="firebutton">Feelin' Hot?</button>
+    </div>
   </body>
 </html>

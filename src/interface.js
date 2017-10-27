@@ -21,6 +21,18 @@ $( document ).ready(function() {
     $('#temp_reading').html(thermo._temperature);
   })
 
+  $( "#psm_on" ).click(function() {
+    thermo.powerSavingModeOn();
+  })
+
+  $( "#psm_off" ).click(function() {
+    thermo.powerSavingModeOff();
+  })
+
+  $( "#energy_usage1" ).click(function() {
+     $("#current_energy_usage").html(thermo.energy_usage());
+  })
+
 })
 
 

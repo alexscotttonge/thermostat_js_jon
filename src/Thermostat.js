@@ -46,4 +46,8 @@ Thermostat.prototype.energy_use = function() {
   if (this._temperature >= 24) return 'High';
 }
 
+Thermostat.prototype.energy_usage = function() {
+  return this.energy_use() + ' usage'
+}
+
 var thermo = new Thermostat();
