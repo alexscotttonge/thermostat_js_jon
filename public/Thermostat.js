@@ -47,5 +47,5 @@ Thermostat.prototype.energy_use = function() {
 }
 
 Thermostat.prototype.energy_usage = function() {
-  return this.energy_use() + ' usage'
+  return this.energy_use() + ' usage';
 }
