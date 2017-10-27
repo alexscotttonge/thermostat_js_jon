@@ -42,4 +42,8 @@ $( document ).ready(function() {
       });
   });
 
+  $.get('http://api.openweathermap.org/data/2.5/weather?q=London,uk&appid=560af2d8a5d3aa69f69a24cdcd57f6f1', function(data) {
+  console.log(data.main.temp);
+});
+
 });
