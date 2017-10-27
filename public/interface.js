@@ -9,6 +9,8 @@ $( document ).ready(function() {
     $('#temp_reading').html(thermo._temperature);
   });
 
+
+
   $( "#down" ).click(function() {
     thermo.down();
     $('#temp_reading').html(thermo._temperature);
@@ -46,6 +48,7 @@ $( document ).ready(function() {
     event.preventDefault();
     var city = $('#current-city').val();
     displayWeather(city);
+    $( "#city ").html(city);
   });
 
   function displayWeather(city) {
@@ -56,5 +59,7 @@ $( document ).ready(function() {
      $('#city-temperature').text(data.main.temp);
     });
   }
+
+
 
 });
