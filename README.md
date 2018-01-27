@@ -1,3 +1,8 @@
+## Overview
+First time learning JavaScript! Building the logic needed to model a simple thermostat.
+
+## User Stories
+
 ```
 As a human living in a house,
 So I can stay warm in winter,
